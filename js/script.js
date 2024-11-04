@@ -8,6 +8,7 @@ cols.forEach(col =>
         }
 }));
 
-function resetTable() {
+
+document.querySelectorAll(".btn-danger").addEventListener("click", () => {
     cols.forEach(col => col.innerHTML = "");
-}
+});
