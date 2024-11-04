@@ -6,6 +6,12 @@ span {
     font-weight: 700;
     text-align: center;
 }
-.td-background {
+.td-morning {
     background-color: #D1E7DD !important;
+}
+.td-noon {
+    background-color: #caf70479 !important;
+}
+.td-afternoon {
+    background-color: #94037c8a !important;
 }
