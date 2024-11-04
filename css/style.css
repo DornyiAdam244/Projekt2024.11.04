@@ -3,7 +3,9 @@ body {
 }
 span {
     color: #0F5132;
+    font-weight: 700;
+    text-align: center  ;
 }
 .td-background {
-    background-color: #D1E7DD;
+    background-color: #D1E7DD !important;
 }
