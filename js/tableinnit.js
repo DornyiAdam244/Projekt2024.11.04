@@ -1,8 +1,13 @@
-let td = `<td class="text-center"></td>`
+
 for (var i = 0; i < 24; i++) {
-    document.querySelector("tbody").innerHTML +=
-    `<tr>
-    <th scope="row">${i}:00</th>
-    
-    </tr>`
+
+    let tr = document.createElement("tr");
+    let th = document.createElement("th");
+    th.setAttribute("scope", "row");
+    th.innerHTML = `${i}:00`;
+    tr.appendChild(th)
+    for (var j = 0; j < 7; j++) {
+        tr.innerHTML += `<td class="text-center"></td>`;
+    }
+    document.querySelector("tbody").appendChild(tr);
 }
