@@ -8,30 +8,35 @@ body {
 }
 
 span {
+    
     font-weight: 700;
     text-align: center;
+
 }
 
 .span-morning {
-    color: #0F5132;
+    color: #ffffff;
+    text-shadow: 1px 1px #000;
 }
 
 .span-afternoon {
-    color: #888888;
+    color: #fcfcfc;
+    text-shadow: 1px 1px #000;
 }
 
 .span-noon {
-    color: #000000;
+    color: #242424;
+
 }
 
 .td-morning {
-    background-color: #D1E7DD !important;
+    background-color: #9fd1ba !important;
 }
 
 .td-noon {
-    background-color: #FF7040 !important;
+    background-color: #FAD95B !important;
 }
 
 .td-afternoon {
-    background-color: #42518c7c !important;
+    background-color: #42518c !important;
 }

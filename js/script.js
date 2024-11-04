@@ -1,4 +1,7 @@
 const cols = document.querySelectorAll("td");
+function xy() {
+
+}
 
 cols.forEach(col =>
     col.addEventListener("click", () => {
