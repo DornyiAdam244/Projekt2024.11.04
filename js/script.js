@@ -1,12 +1,13 @@
-document.querySelectorAll(".table-col").forEach(col =>
+const cols = document.querySelectorAll(".table-col")
+
+cols.forEach(col =>
     col.addEventListener("click", () => {
-        
+        let event = prompt("Adj meg egy eseményt (vagy hagyd üresen a törléshez):");
+        col.innerHTML = event;
     }));
 
 
-`<tr>
-<th scope="row">1</th>
-<td>Mark</td>
-<td>Otto</td>
-<td>@mdo</td>
-</tr>`
+function resetTable() {
+    cols.forEach(col => col.innerHTML = "");
+}
+
