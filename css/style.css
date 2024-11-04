@@ -9,7 +9,7 @@ span {
     color: #0F5132;
 }
 .span-afternoon {
-    color: #ffffff;
+    color: #888888;
 }
 .span-noon {
     color: #000000;
@@ -18,8 +18,8 @@ span {
     background-color: #D1E7DD !important;
 }
 .td-noon {
-    background-color: #cbf70438 !important;
+    background-color: #FF7040 !important;
 }
 .td-afternoon {
-    background-color: #68045794 !important;
+    background-color: #42518C !important;
 }
