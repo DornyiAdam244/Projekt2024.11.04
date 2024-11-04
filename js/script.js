@@ -1,35 +1,49 @@
-const cols = document.querySelectorAll("td");
+let tbody = (localStorage.getItem("events")) || ``;
 
-cols.forEach(col =>
-    col.addEventListener("click", () => {
-        let event = prompt("Adj meg egy eseményt (vagy hagyd üresen a törléshez):");
-        const hour = Number(col.getAttribute("hourIndex"));
-        const span = document.createElement("span");
 
-        if (event) {
-            col.classList = "text-center";
-            if (hour < 12) {
-                col.classList.toggle("td-morning");
-                span.classList.add("span-morning");
-            }
-            else if (hour > 18) {
-                col.classList.toggle("td-afternoon");
-                span.classList.add("span-afternoon");
-            }
-            else {
-                col.classList.toggle("td-noon");
-                span.classList.add("span-noon");
-            }
-            col.innerHTML = "";
-            span.innerHTML = event;
-            col.appendChild(span);
-        }
-        else if (event == "") {
-            col.classList = ["text-center"];
-            col.innerHTML = "";
-        }
-}));
+function init() {
+    if (!tbody) {
+        initTable();
+    }
+    else {
+        document.querySelector("tbody").innerHTML = tbody;
+    }
+    setListeners();
 
+}
+
+function setListeners() {
+    const cols = document.querySelectorAll("td");
+    cols.forEach(col =>
+        col.addEventListener("click", () => {
+            let event = prompt("Adj meg egy eseményt (vagy hagyd üresen a törléshez):");
+            const hour = Number(col.getAttribute("hourIndex"));
+            const span = document.createElement("span");
+            if (event) {
+                col.classList = "text-center";
+                if (hour < 12) {
+                    col.classList.toggle("td-morning");
+                    span.classList.add("span-morning");
+                }
+                else if (hour > 18) {
+                    col.classList.toggle("td-afternoon");
+                    span.classList.add("span-afternoon");
+                }
+                else {
+                    col.classList.toggle("td-noon");
+                    span.classList.add("span-noon");
+                }
+                col.innerHTML = "";
+                span.innerHTML = event;
+                col.appendChild(span);
+            }
+            else if (event == "") {
+                col.classList = ["text-center"];
+                col.innerHTML = "";
+            }
+            localStorage.setItem("events", document.querySelector("tbody").innerHTML);
+        }));
+}
 
 document.querySelector(".btn-danger").addEventListener("click", () => {
     const cols = document.querySelectorAll("td");
