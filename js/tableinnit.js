@@ -7,7 +7,7 @@ for (var i = 0; i < 24; i++) {
     th.innerHTML = `${i}:00`;
     tr.appendChild(th)
     for (var j = 0; j < 7; j++) {
-        tr.innerHTML += `<td class="text-center"></td>`;
+        tr.innerHTML += `<td hourIndex="${i}" class="text-center"></td>`;
     }
     document.querySelector("tbody").appendChild(tr);
 }
