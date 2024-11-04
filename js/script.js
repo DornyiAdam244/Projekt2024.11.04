@@ -1,4 +1,4 @@
-const cols = document.querySelectorAll(".table-col")
+const cols = document.querySelectorAll("td")
 
 cols.forEach(col =>
     col.addEventListener("click", () => {
