@@ -1,25 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 body {
     padding: 50px;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
+
 span {
     font-weight: 700;
     text-align: center;
 }
+
 .span-morning {
     color: #0F5132;
 }
+
 .span-afternoon {
     color: #ffffff;
 }
+
 .span-noon {
     color: #000000;
 }
+
 .td-morning {
     background-color: #D1E7DD !important;
 }
+
 .td-noon {
     background-color: #cbf70438 !important;
 }
+
 .td-afternoon {
     background-color: #68045794 !important;
 }
