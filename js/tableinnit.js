@@ -1,4 +1,3 @@
-
 function initTable() {
     for (var i = 0; i < 24; i++) {
 
