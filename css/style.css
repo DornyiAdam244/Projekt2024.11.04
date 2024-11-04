@@ -2,16 +2,24 @@ body {
     padding: 50px;
 }
 span {
-    color: #0F5132;
     font-weight: 700;
     text-align: center;
+}
+.span-morning {
+    color: #0F5132;
+}
+.span-afternoon {
+    color: #35012c;
+}
+.span-noon {
+    color: #cbf704;
 }
 .td-morning {
     background-color: #D1E7DD !important;
 }
 .td-noon {
-    background-color: #caf70479 !important;
+    background-color: #cbf70438 !important;
 }
 .td-afternoon {
-    background-color: #94037c8a !important;
+    background-color: #68045794 !important;
 }
