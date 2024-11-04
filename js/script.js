@@ -1,8 +1,4 @@
 const cols = document.querySelectorAll("td");
-function xy() {
-
-}
-
 cols.forEach(col =>
     col.addEventListener("click", () => {
         let event = prompt("Adj meg egy eseményt (vagy hagyd üresen a törléshez):");
